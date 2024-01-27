@@ -1,0 +1,271 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Scheme </title>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="Images/logo3.png"/>
+  <link rel="icon" href="Images/footerlogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+/* Use a custom font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+
+/* Set some basic styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+/* Style the form container */
+.form {
+  width: 600px;
+  max-width: 90%;
+  margin: 50px auto;
+  padding: 40px;
+  background: linear-gradient(to bottom, #f0f0f0, #d9d9d9); /* Background gradient */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  font-family: 'Roboto', sans-serif;
+  
+
+}
+
+/* Style the form title */
+.form-title {
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+/* Style the form group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Style the form label */
+.form-group label {
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  margin-bottom: 5px;
+}
+
+/* Style the form input */
+.form-group input, .form-group select {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  font-weight: 400;
+  color: #333333;
+  outline: none;
+  background-color: #ffffff; /* Input background color */
+}
+
+/* Style the form input placeholder */
+.form-group input::placeholder {
+  color: #999999;
+}
+
+/* Style the form input focus */
+.form-group input:focus, .form-group select:focus {
+  border-color: #666666;
+}
+
+/* Style the form button */
+.form-button {
+  width: 100%;
+  height: 50px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(to right, #4CAF50, #2196F3); /* Button gradient */
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* Style the form button hover */
+.form-button:hover {
+  background: linear-gradient(to right, #45a049, #1e87f0); /* Button gradient on hover */
+}
+
+    </style>
+</head>
+<body>
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/mainlogo.png" alt="Logo"></a>
+      
+    </div>
+
+    <button class="menu-btn">&#9776;</button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="sign-in">
+      <a href="signin.html"> 
+         <button>Sign In</button></a>
+    
+    </div>
+  </div>
+
+    <!-- HTML code for the form -->
+<form class="form">
+    <h1 class="form-title">Find a Scheme</h1>
+    <div class="form-group">
+      <label for="name">Name</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="60" required>
+    </div>
+    <div class="form-group">
+      <label for="gender">Gender</label>
+      <select id="gender" name="gender" required>
+        <option value="" disabled selected>Select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <select id="state" name="state" required>
+        <option value="" disabled selected>Select your state</option>
+        <option value="andhra pradesh">Maharashtra</option>
+        <option value="arunachal pradesh">Arunachal Pradesh</option>
+        <option value="assam">Assam</option>
+        <!-- Add more options for other states -->
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="income">Annual Income</label>
+      <input type="number" id="income" name="income" placeholder="Enter your annual income" min="0" required>
+    </div>
+    <div class="form-group">
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="" disabled selected>Select your category</option>
+        <option value="general">General</option>
+        <option value="sc">SC</option>
+        <option value="st">ST</option>
+        <option value="obc">OBC</option>
+        <option value="ews">EWS</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="occupation">Occupation</label>
+      <select id="occupation" name="occupation" required>
+        <option value="" disabled selected>Select your occupation</option>
+        <option value="farmer">Farmer</option>
+        <option value="worker">Worker</option>
+        <option value="student">Student</option>
+        <option value="professional">Professional</option>
+        <option value="business">Business</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="interests">Interests</label>
+      <input type="text" id="interests" name="interests" placeholder="Enter your interests separated by commas">
+    </div>
+    <div class="form-group">
+      <button type="submit" class="form-button">Find Scheme</button>
+    </div>
+  </form>
+      <!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Jan<span>Jagruti</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" target=”_blank”>Home</a>
+            |
+            <a href="about.html"target=”_blank”>About</a>
+            |
+            <a href="services.html"target=”_blank”>Services</a>
+            |
+            <a href="contact.html"target=”_blank”>Contact</a>
+            |
+            <a href="faq.html"target=”_blank”>FAQ's</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>JanJagruti</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nashik</span>
+                Maharashtra</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 8087990543</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">imashish1332@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JanJagruti</span>
+            <strong>#Scheme4All</strong> The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"target=”_blank”></i></a>
+            <a href="https://www.linkedin.com/in/ashish-bhangale-2759a523a/"><i class="fa fa-linkedin"target=”_blank”></i></a>
+            <a href="https://twitter.com/home"target=”_blank”><i class="fa fa-twitter"target=”_blank”></i></a>
+            <a href="#"><i class="fa fa-whatsapp"target=”_blank”></i></a>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <style>
+    .gradient {
+    height: 50vh;
+    background: linear-gradient(to bottom, #bde7d7 0%, #ffffff 38%);
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to bottom, #bde7d7 0%, #ffffff 38%);
+    padding-top: 150px;
+    width: 100%;
+  }
+
+  .video {
+    width: 40%;
+    margin-right: 20px;
+    position: relative;
+  }
+
+  .video iframe {
+    width: 100%;
+    height: 300px;
+    border: 5px solid white;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  }
+
+  .video::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+    border: 10px solid #14813d;
+    border-radius: 10px;
+    z-index: -1;
+  }
+
+  .info {
+    width: 40%;
+    margin-left: 20px;
+  }
+
+  .info h1 {
+    color: #14813d;
+    font-size: 36px;
+    margin-bottom: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+
+  .info p {
+    color: #333;
+    font-size: 18px;
+    line-height: 1.5;
+    font-family: 'Arial', sans-serif;
+  }
+    </style>
+    </head>
+    <body>
+        <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/mainlogo.png" alt="Logo"></a>
+      
+    </div>
+
+    <button class="menu-btn">&#9776;</button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="sign-in">
+      <a href="signin.html"> 
+         <button>Sign In</button></a>
+    
+    </div>
+  </div>
+  </div>
+        <div class="container">
+          <div class="video">
+            <iframe width="392" height="300" src="https://www.youtube.com/embed/bNOWkB-6cmc" title="myScheme: One Stop Research For Government schemes" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </div>
+          <div class="info">
+            <h1>About Us</h1>
+            <p><b> Our Vision</b> <br>
+                Our vision is to make citizens life easier <br> <br><br>
+                <b>Our Mission </b> <br>
+                Our mission is to streamline the government – user interface for government schemes and benefits. <br>
+                Reduce time and effort required to find and avail a government scheme
+            </p>
+          </div>
+        </div>
+        <!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Jan<span>Jagruti</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" target=”_blank”>Home</a>
+            |
+            <a href="about.html"target=”_blank”>About</a>
+            |
+            <a href="services.html"target=”_blank”>Services</a>
+            |
+            <a href="contact.html"target=”_blank”>Contact</a>
+            |
+            <a href="faq.html"target=”_blank”>FAQ's</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>JanJagruti</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nashik</span>
+                Maharashtra</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 8087990543</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">imashish1332@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JanJagruti</span>
+            <strong>#Scheme4All</strong> The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"target=”_blank”></i></a>
+            <a href="https://www.linkedin.com/in/ashish-bhangale-2759a523a/"><i class="fa fa-linkedin"target=”_blank”></i></a>
+            <a href="https://twitter.com/home"target=”_blank”><i class="fa fa-twitter"target=”_blank”></i></a>
+            <a href="#"><i class="fa fa-whatsapp"target=”_blank”></i></a>
+        </div>
+    </div>
+</footer> 
+        
+    </body>
+    </html>

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JanJagruti</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="Images/logo3.png"/>
+  <link rel="icon" href="Images/footerlogo.png" type="image/x-icon"/>
+</head>
+
+<body>
+
+  <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/mainlogo.png" alt="Logo"></a>
+      
+    </div>
+
+    <button class="menu-btn">&#9776;</button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="sign-in">
+      <a href="signin.html"> 
+         <button>Sign In</button></a>
+    
+    </div>
+  </div>
+
+  <!-- Banner -->
+  <div class="banner-slider">
+    <img src="Images/banner1.png" alt="Banner 1" class="active">
+    <img src="Images/banner2.jpeg" alt="Banner 2" class="inactive">
+    <img src="Images/banner3.png" alt="Banner 3" class="inactive">
+    <button class="prev-btn" onclick="prevBanner">&#8249;</button>
+    <button class="next-btn" onclick="nextBanner">&#8250;</button>
+  </div>
+<!-- How it work -->
+  <div class="content">
+    <div class="section">
+        <h2>How it works</h2>
+            <div class="cards">
+            <a class="cardlink" href="eligibility.html" target=”_blank” ><div class="card">
+              <img src="Images/card1.png" alt="Card 1 image" >
+              <h3>Eligibility Check</h3>
+              <p>You can check your eligibility for schemes using different criteria and personal attributes.</p>
+          </div></a>
+            <a class="cardlink" href="findscheme.html" target=”_blank”><div class="card">
+              <img src="Images/card2.png" alt="Card 2 image">
+              <h3>Scheme Finder</h3>
+              <p>Fast and easy searching with filter-based drill downs for various Government Schemes.</p>
+          </div></a>
+            <a class="cardlink" href="schemes.html" target=”_blank”><div class="card">
+              <img src="Images/card3.png" alt="Card 3 image">
+              <h3>Scheme in detail</h3>
+              <p>Deep dive into dedicated scheme pages for fine-grained scheme details before you apply.</p>
+          </div></a>
+        </div>
+    </div>
+ 
+<!-- Popular scheme -->
+<div class="section">
+  <h2>Popular Schemes</h2>
+  <div class="slider">
+    <div class="slide slide1">
+      <img src="Images/slide1.jpg" alt="Slide 1 image">
+      <div class="info">
+        <h3>Pradhan Mantri Awas Yojana</h3>
+        <p>A scheme to provide affordable housing to the urban poor.</p>
+        <a href="https://pmaymis.gov.in/" class="btn" target=”_blank”>View Details</a>
+      </div>
+    </div>
+    <div class="slide slide2">
+      <img src="Images/slide2.webp" alt="Slide 2 image">
+      <div class="info">
+        <h3>Pradhan Mantri Jan Dhan Yojana</h3>
+        <p>A scheme to provide financial inclusion to the unbanked population.</p>
+        <a href="https://pmjdy.gov.in/pmjdylogo" class="btn" target=”_blank”>View Details</a>
+      </div>
+    </div>
+    <div class="slide slide3">
+      <img src="Images/slide3.webp" alt="Slide 3 image">
+      <div class="info">
+        <h3>Pradhan Mantri Ujjwala Yojana</h3>
+        <p>A scheme to provide free LPG connections to the poor households.</p>
+        <a href="https://www.pmuy.gov.in/" class="btn" target=”_blank”>View Details</a>
+      </div>
+    </div>
+    <div class="arrow arrow-left" onclick="prevSlide()"></div>
+    <div class="arrow arrow-right" onclick="nextSlide()"></div>
+  </div>
+</div>
+<!-- Latest news-->
+<div class="section">
+  <h2>Latest News</h2>
+  <div class="news">
+    <div class="news-item">
+      <img src="Images/news1.png" alt="News 1 image">
+      <div class="news-info">
+        <h3>JanJagruti launches new features to enhance user experience</h3>
+        <p>JanJagruti has introduced new features such as voice search, chatbot, and multilingual support to make the platform more user-friendly and accessible.</p>
+       
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="Images/news2.jpg" alt="News 2 image">
+      <div class="news-info">
+        <h3>JanJagruti partners with state governments to expand its reach</h3>
+        <p>JanJagruti has signed MoUs with several state governments to integrate their schemes and benefits on the platform and increase its coverage and impact.</p>
+        
+      </div>
+    </div>
+    <div class="news-item">
+      <img src="Images/news3.jpg" alt="News 3 image">
+      <div class="news-info">
+        <h3>JanJagruti wins the National e-Governance Award 2023</h3>
+        <p>JanJagruti has been awarded the National e-Governance Award 2023 for its excellence in delivering citizen-centric services and promoting digital inclusion.</p>
+        
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+ <!-- --------------------------------App------------------------------------ -->
+ <section class="mobileapp_section">
+  <figure class="mobileapp">
+     <div class="mobileapp_hero">
+         <img class="mobileapp_img" src="Images/app.png" alt="img">
+     </div>
+     <div class="mobileapp_content">
+         <div class="mobileapp_info">
+             <h5 class="mobileapp_tital2">DOWNLOAD <span>OUR APP</span> </h5>
+             <p class="mobileapp_student">Can run on all android mobiles.<br>
+            use it to stay updated.</p>
+             <div class="myapp"><a href="vmv-dept.apk"> <button class="appcta">Download app here <i class="fa fa-arrow-down" aria-hidden="true"></i>
+             </button></a>
+             
+             </div>
+           
+         </div>
+        
+     </div>
+    
+    
+ </section>
+  <!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Jan<span>Jagruti</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" target=”_blank”>Home</a>
+            |
+            <a href="about.html"target=”_blank”>About</a>
+            |
+            <a href="services.html"target=”_blank”>Services</a>
+            |
+            <a href="contact.html"target=”_blank”>Contact</a>
+            |
+            <a href="faq.html"target=”_blank”>FAQ's</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>JanJagruti</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nashik</span>
+                Maharashtra</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 8087990543</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">imashish1332@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JanJagruti</span>
+            <strong>#Scheme4All</strong> The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"target=”_blank”></i></a>
+            <a href="https://www.linkedin.com/in/ashish-bhangale-2759a523a/"><i class="fa fa-linkedin"target=”_blank”></i></a>
+            <a href="https://twitter.com/home"target=”_blank”><i class="fa fa-twitter"target=”_blank”></i></a>
+            <a href="#"><i class="fa fa-whatsapp"target=”_blank”></i></a>
+        </div>
+    </div>
+</footer>
+  
+</body>
+
+</html>

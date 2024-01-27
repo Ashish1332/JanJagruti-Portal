@@ -1,0 +1,263 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eligibility Check</title>
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="Images/logo3.png"/>
+  <link rel="icon" href="Images/footerlogo.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Apply a modern background gradient to the body */
+        body {
+            background: linear-gradient(to right, #74ebd5, #acb6e5);
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+        }
+
+        /* Style the form */
+        form {
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Style the title and subtitle */
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Style the fieldset */
+        fieldset {
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        /* Style the legend */
+        legend {
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Style the labels */
+        label {
+            display: inline-block;
+            width: 150px;
+            margin: 10px;
+            font-size: 14px;
+            color: #333;
+        }
+
+        /* Style the input elements */
+        input, select {
+            display: inline-block;
+            width: 200px;
+            margin: 10px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+            color: #333;
+            outline: none;
+        }
+
+        /* Style the input elements on focus */
+        input:focus, select:focus {
+            border-color: #666;
+        }
+
+        /* Style the radio and checkbox elements */
+        input[type=radio], input[type=checkbox] {
+            width: 20px;
+        }
+
+        /* Style the button elements */
+        button {
+            display: inline-block;
+            width: 100px;
+            margin: 10px;
+            padding: 10px;
+            border: none;
+            font-size: 16px;
+            color: #fff;
+            background-color: #333;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Style the button elements on hover */
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="Images/mainlogo.png" alt="Logo"></a>
+      
+    </div>
+
+    <button class="menu-btn">&#9776;</button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="sign-in">
+      <a href="signin.html"> 
+         <button>Sign In</button></a>
+    
+    </div>
+  </div>
+
+    <form>
+        <h1>Check your eligibility for government schemes</h1>
+        <h2>You can check your eligibility for government schemes using different criteria and personal attributes</h2>
+        <fieldset>
+            <legend>Personal Details</legend>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+            <label for="age">Age:</label>
+            <input type="number" id="age" name="age" placeholder="Enter your age" min="18" max="60" required>
+            <label for="gender">Gender:</label>
+            <select id="gender" name="gender" required>
+                <option value="">Select your gender</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+        </fieldset>
+        <fieldset>
+            <legend>Income</legend>
+            <label for="salary">Monthly Salary:</label>
+            <input type="number" id="salary" name="salary" placeholder="Enter your monthly salary" min="0" required>
+            <label for="tax">Tax Paid:</label>
+            <input type="number" id="tax" name="tax" placeholder="Enter your tax paid" min="0" required>
+            <label for="savings">Savings:</label>
+            <input type="number" id="savings" name="savings" placeholder="Enter your savings" min="0" required>
+        </fieldset>
+        <fieldset>
+            <legend>Education</legend>
+            <label for="qualification">Highest Qualification:</label>
+            <select id="qualification" name="qualification" required>
+                <option value="">Select your highest qualification</option>
+                <option value="primary">Primary</option>
+                <option value="secondary">Secondary</option>
+                <option value="higher">Higher</option>
+                <option value="graduate">Graduate</option>
+                <option value="postgraduate">Postgraduate</option>
+            </select>
+            <label for="marks">Percentage of Marks:</label>
+            <input type="number" id="marks" name="marks" placeholder="Enter your percentage of marks" min="0" max="100" required>
+            <label for="interest">Area of Interest:</label>
+            <input type="text" id="interest" name="interest" placeholder="Enter your area of interest" required>
+        </fieldset>
+        <fieldset>
+            <legend>Other Criteria</legend>
+            <label for="caste">Caste:</label>
+            <select id="caste" name="caste" required>
+                <option value="">Select your caste</option>
+                <option value="general">General</option>
+                <option value="sc">Scheduled Caste</option>
+                <option value="st">Scheduled Tribe</option>
+                <option value="obc">Other Backward Class</option>
+            </select>
+            <label for="disability">Disability:</label>
+            <input type="radio" id="yes" name="disability" value="yes" required>
+            <label for="yes">Yes</label>
+            <input type="radio" id="no" name="disability" value="no" required>
+            <label for="no">No</label>
+          
+        </fieldset>
+        <button type="submit">Submit</button>
+        <button type="reset">Reset</button>
+    </form>
+      <!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Jan<span>Jagruti</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" target=”_blank”>Home</a>
+            |
+            <a href="about.html"target=”_blank”>About</a>
+            |
+            <a href="services.html"target=”_blank”>Services</a>
+            |
+            <a href="contact.html"target=”_blank”>Contact</a>
+            |
+            <a href="faq.html"target=”_blank”>FAQ's</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>JanJagruti</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nashik</span>
+                Maharashtra</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 8087990543</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">imashish1332@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JanJagruti</span>
+            <strong>#Scheme4All</strong> The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"target=”_blank”></i></a>
+            <a href="https://www.linkedin.com/in/ashish-bhangale-2759a523a/"><i class="fa fa-linkedin"target=”_blank”></i></a>
+            <a href="https://twitter.com/home"target=”_blank”><i class="fa fa-twitter"target=”_blank”></i></a>
+            <a href="#"><i class="fa fa-whatsapp"target=”_blank”></i></a>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>

@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="fonts/icomoon/style.css">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+    <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500&display=swap" rel="stylesheet">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro:400,600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="fonts/icomoon/style.css">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+  <link href="http://fonts.googleapis.com/css?family=Cookie" rel="stylesheet" type="text/css">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="script.js" defer></script>
+  <link rel="icon" type="image/png" href="Images/logo3.png"/>
+  <link rel="icon" href="Images/footerlogo.png" type="image/x-icon"/>
+    <style>
+        /* --------Sign in--------- */
+:root {
+  --main-btn-bg-color: #bde7d7;
+}
+
+.input-group-text {
+  color: #fff;
+  background-color: var(--main-btn-bg-color);
+}
+
+.form-control:focus, .custom-select:focus, .custom-file-label:focus {
+  box-shadow: none;
+}
+
+.section {
+  z-index: 999;
+  box-shadow: 0px 6px 3px 0px rgba(0, 0, 0, 0.15);
+  position: relative;
+  text-decoration: none;
+}
+
+.bg-colored {
+  background-color: var(--main-btn-bg-color);
+  width: 100%;
+  height: 50vh;
+  position: absolute;
+  z-index: 0;
+}
+
+.full-button {
+  background-color: var(--main-btn-bg-color);
+  color: #fff;
+  transition: background-color 0.3s ease;
+  border-radius: 5px;
+}
+
+.full-button:hover {
+  background-color: #10562a;
+}
+    </style>
+    <title>Sign In</title>
+</head>
+<body>
+     <!-- Header -->
+  <div class="header">
+    <div class="logo">
+      <img src="Images/mainlogo.png" alt="Logo">
+    </div>
+
+    <button class="menu-btn">&#9776;</button>
+
+    <ul class="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="faq.html">FAQ's</a></li>
+    </ul>
+
+    <div class="search">
+      <input type="text" placeholder="Search...">
+      <a href=""><i class="fas fa-search"></i></a>
+    </div>
+
+    <div class="sign-in">
+      <a href="signin.html"> 
+         <button>Sign In</button></a>
+    
+    </div>
+  </div>
+
+    <div class="bg-colored"></div>
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+        <div class=" col-lg-6">
+            <div class="section bg-white p-0">
+                <div class="card-header ">
+                    <div class="text-center mt-2 mb-1">
+                        <h1>Login</h1>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div>
+                        <form id="form" role="form" class="row" onsubmit="return validateLoginForm()">
+                            <div class="form-group col-12">
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Email"
+                                    required>
+                            </div>
+                            <div class="form-group col-12">
+                                <input type="password" class="form-control" id="password" name="password"
+                                    placeholder="Password" required>
+                            </div>
+                            <div class="col-12" >
+                                <small>Don't have an account?</small>
+                                <a style="text-decoration: none;" href="signup.html">Sign Up</a>
+                            </div>
+                            <div class=" col-12 text-center mt-3">
+                                <button type="submit" class="full-button">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function validateLoginForm() {
+            var email = document.getElementById("email").value;
+            var password = document.getElementById("password").value;
+
+            var emailPattern = /^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/;
+
+            if (!emailPattern.test(email)) {
+                alert("Invalid email address. Please follow the standard pattern (name@domain.com).");
+                return false;
+            }
+            if (password.length < 6) {
+                alert("Password should be at least 6 characters long.");
+                return false;
+            }
+
+            return true;
+        }
+    </script>
+      <!-- Footer -->
+  <footer class="footer-distributed">
+
+    <div class="footer-left">
+        <h3>Jan<span>Jagruti</span></h3>
+
+        <p class="footer-links">
+            <a href="index.html" target=”_blank”>Home</a>
+            |
+            <a href="about.html"target=”_blank”>About</a>
+            |
+            <a href="services.html"target=”_blank”>Services</a>
+            |
+            <a href="contact.html"target=”_blank”>Contact</a>
+            |
+            <a href="faq.html"target=”_blank”>FAQ's</a>
+        </p>
+
+        <p class="footer-company-name">Copyright © 2023 <strong>JanJagruti</strong> All rights reserved</p>
+    </div>
+
+    <div class="footer-center">
+        <div>
+            <i class="fa fa-map-marker"></i>
+            <p><span>Nashik</span>
+                Maharashtra</p>
+        </div>
+
+        <div>
+            <i class="fa fa-phone"></i>
+            <p>+91 8087990543</p>
+        </div>
+        <div>
+            <i class="fa fa-envelope"></i>
+            <p><a href="mailto:sagar00001.co@gmail.com">imashish1332@gmail.com</a></p>
+        </div>
+    </div>
+    <div class="footer-right">
+        <p class="footer-company-about">
+            <span>JanJagruti</span>
+            <strong>#Scheme4All</strong> The platform helps the citizen to find the right Government schemes for them. It also guides on how to apply for different Government schemes. Thus no need to visit multiple Government websites.
+        </p>
+        <div class="footer-icons">
+            <a href="#"><i class="fa fa-instagram"target=”_blank”></i></a>
+            <a href="https://www.linkedin.com/in/ashish-bhangale-2759a523a/"><i class="fa fa-linkedin"target=”_blank”></i></a>
+            <a href="https://twitter.com/home"target=”_blank”><i class="fa fa-twitter"target=”_blank”></i></a>
+            <a href="#"><i class="fa fa-whatsapp"target=”_blank”></i></a>
+        </div>
+    </div>
+</footer>
+  
+</body>
+</html>
